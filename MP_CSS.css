@@ -1,0 +1,481 @@
+body{
+  /*background-image:url("https://i.pinimg.com/originals/b9/cb/ab/b9cbabb1a1ce1b2366a6af878fff10f8.jpg");*/
+  background-image: url("https://cutewallpaper.org/21/black-background-1080p/45-1080P-Black-Wallpaper-on-WallpaperSafari.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 2400px;
+}
+
+hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border: 1px solid #555;
+
+}
+
+h1{
+  color: #555;
+}
+
+
+
+
+.space{
+  height: 80px;
+}
+
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ...................NAV BAR........................*/
+
+.nav-bar{
+  margin-top: 48px;
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+
+.menu-bar-part{
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+}
+.menu-bar-part a{
+  float: right; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 5%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 6px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+/* Add a black background color to the top navigation */
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 5%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 6px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+.menu-bar-part a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #3D2C8D; /* Add an active/current color */
+}
+
+
+/* ...................NAV BAR........................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ...................Slideshow........................*/
+
+* {box-sizing:border-box}
+
+.all-slides-items{
+  margin-top: 96px;
+  width: 100%; /* Full-width */
+  overflow: auto;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+.next {
+  position: relative;
+  float: right;
+  width: 20%;
+  color: #3D2C8D;
+  font-size: 288px;
+  user-select:none;
+}
+
+.prev {
+  width: 20%;
+  float: left;
+  color: #3D2C8D;
+  font-size: 288px;
+  user-select:none;
+  overflow: auto;
+
+}
+.prev a{
+  float: right;
+  padding-top: 100px;
+  padding-right: 150px;
+}
+.next a{
+  float: left;
+  padding-top: 100px;
+  padding-left: 150px;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ..................................................*/
+/* ...................SideNavBar.....................*/
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #555; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 18px 8px 18px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background: #3D2C8D;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-bottom: 20px;
+  font-size: 48px;
+  margin-left: 40px;
+}
+
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #3D2C8D;
+  color: white;
+  font-size: 32px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 18%;
+  border-radius: 20%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  font-size: 20px;
+  color: #3D2C8D;
+}
+
+
+.formgap{
+  border: 1px solid #555;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  padding-top: 300px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #555;
+  margin: 5px auto;
+  border: 1px solid #555;
+  width: 40%; /* Could be more or less, depending on screen size */
+  height: 600px;
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 70px;
+  font-weight: bold;
+  color: #f44336;
+}
+
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gap{
+  width: 100%;
+  height: 50px;
+}
+
+.sec-name{
+  width: 100%;
+  float: left;
+  padding-left: 50px;
+}
+
+.hr-sec{
+  display: block;
+  border: 1px  solid  #3D2C8D;
+}
+
+.allsec{
+  width: 100%;
+  overflow: auto;
+}
+
+.cpu1,.cpu2,.cpu3{
+  float: left;
+  margin: 10px;
+  width: 250px;
+}
+
+
+.kk{
+  float: left;
+  margin: 10px;
+  width: 250px;
+}
